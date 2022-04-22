@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    a(href="/") Back
+    h1 New Message 
+    form(method="POST", action="/new")
+        #form-container 
+            | Name:
+            input(type="text", name="name", value="")
+            | Message: 
+            input(type="text", name="message", value="")
+        input(type="submit", value="Submit")
